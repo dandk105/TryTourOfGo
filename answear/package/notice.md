@@ -53,3 +53,33 @@ func main() {
 ```golang
 	var c, python, java = true, false, "no!"
 ```
+
+# Basic types
+Go言語の基本の型
+int,uintとuintptrが基本32ビットだが、64ビットのシステムだと64ビットに拡張する
+整数値が必要な時で特別な理由がない時は intを利用する様にする。
+**ビットシフト計算** 
+
+```
+bool
+
+string
+
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr
+
+byte // alias for uint8
+
+rune // alias for int32
+     // represents a Unicode code point
+
+float32 float64
+
+complex64 complex128
+```
+
+# Zero values
+ゼロの値の定義は型によって違う
+- 数字型は0
+- 文字列は空文字""
+- bool型はfalse
